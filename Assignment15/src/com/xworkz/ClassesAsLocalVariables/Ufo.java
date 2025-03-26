@@ -1,6 +1,8 @@
 package com.xworkz.ClassesAsLocalVariables;
 
 public class Ufo {
+
+    
     public void land(Alien alien){
         if (alien != null) {
             System.out.println("Name: "+alien.getSeenBy());
@@ -9,4 +11,15 @@ public class Ufo {
         }
 
     }
+
+
+    public void land(Alien[] alien){
+        if (alien != null) {
+
+
+
+        }
+
+    }
+
 }

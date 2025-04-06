@@ -1,19 +1,19 @@
 package com.xworkz.Inheritance.Places;
 
 public class Place {
-    public void Rome(){
+    public void rome(){
         System.out.println("Roming in Place");
     }
-    public void Run(){
+    public void run(){
         System.out.println("Running in Place");
     }
-    public void Sleep(){
+    public void sleep(){
         System.out.println("Sleeping in Place");
     }
-    public void Work(){
+    public void work(){
         System.out.println("Working in place");
     }
-    public void Ride(){
+    public void ride(){
         System.out.println("Riding in place");
     }
 }

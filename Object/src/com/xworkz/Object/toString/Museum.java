@@ -15,4 +15,8 @@ public class Museum {
     public String toString() {
         return "Museum{name='" + name + "', city='" + city + "', exhibits=" + exhibits + "}";
     }
+    @Override
+    public int hashCode() {
+        return 51;
+    }
 }

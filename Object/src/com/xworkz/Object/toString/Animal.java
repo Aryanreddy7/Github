@@ -15,4 +15,8 @@ public class Animal {
     public String toString() {
         return "Animal{species='" + species + "', age=" + age + ", habitat='" + habitat + "'}";
     }
+    @Override
+    public int hashCode() {
+        return 03;
+    }
 }

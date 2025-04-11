@@ -15,4 +15,8 @@ public class Microwave {
         public String toString() {
             return "Microwave{brand='" + brand + "', power=" + power + ", convection=" + convection + "}";
         }
+    @Override
+    public int hashCode() {
+        return 46;
+    }
     }

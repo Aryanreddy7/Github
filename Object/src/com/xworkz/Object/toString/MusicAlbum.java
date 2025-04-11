@@ -15,4 +15,8 @@ public class MusicAlbum {
     public String toString() {
         return "MusicAlbum{name='" + name + "', artist='" + artist + "', year=" + year + "}";
     }
+    @Override
+    public int hashCode() {
+        return 52;
+    }
 }

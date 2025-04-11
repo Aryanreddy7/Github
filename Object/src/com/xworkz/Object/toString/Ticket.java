@@ -15,4 +15,8 @@ public class Ticket {
     public String toString() {
         return "Ticket{event='" + event + "', seat='" + seat + "', price=" + price + "}";
     }
+    @Override
+    public int hashCode() {
+        return 75;
+    }
 }

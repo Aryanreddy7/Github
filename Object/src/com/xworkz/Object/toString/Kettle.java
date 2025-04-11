@@ -15,4 +15,8 @@ public class Kettle {
     public String toString() {
         return "Kettle{brand='" + brand + "', capacity=" + capacity + ", temperatureControl=" + temperatureControl + "}";
     }
+    @Override
+    public int hashCode() {
+        return 43;
+    }
 }

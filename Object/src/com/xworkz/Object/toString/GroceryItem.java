@@ -15,4 +15,8 @@ public class GroceryItem {
     public String toString() {
         return "GroceryItem{name='" + name + "', price=" + price + ", category='" + category + "'}";
     }
+    @Override
+    public int hashCode() {
+        return 36;
+    }
 }

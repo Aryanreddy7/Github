@@ -15,4 +15,9 @@ public class Clothing {
     public String toString() {
         return "Clothing{type='" + type + "', size='" + size + "', color='" + color + "'}";
     }
+    @Override
+    public int hashCode() {
+        return 18;
+    }
 }
+

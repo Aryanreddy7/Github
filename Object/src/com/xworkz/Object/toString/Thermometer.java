@@ -15,4 +15,8 @@ public class Thermometer {
     public String toString() {
         return "Thermometer{type='" + type + "', range=" + range + ", digital=" + digital + "}";
     }
+    @Override
+    public int hashCode() {
+        return 74;
+    }
 }

@@ -15,4 +15,8 @@ public class Fan {
     public String toString() {
         return "Fan{type='" + type + "', speedLevels=" + speedLevels + ", remoteControl=" + remoteControl + "}";
     }
+    @Override
+    public int hashCode() {
+        return 28;
+    }
 }

@@ -15,4 +15,8 @@ public class TVShow {
     public String toString() {
         return "TVShow{title='" + title + "', seasons=" + seasons + ", genre='" + genre + "'}";
     }
+    @Override
+    public int hashCode() {
+        return 80;
+    }
 }

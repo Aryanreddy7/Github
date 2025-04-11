@@ -15,4 +15,8 @@ public class Console {
     public String toString() {
         return "Console{name='" + name + "', storage=" + storage + ", portable=" + portable + "}";
     }
+    @Override
+    public int hashCode() {
+        return 20;
+    }
 }

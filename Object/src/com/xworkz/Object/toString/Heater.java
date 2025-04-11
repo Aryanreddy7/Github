@@ -15,4 +15,8 @@ public class Heater {
     public String toString() {
         return "Heater{type='" + type + "', power=" + power + ", portable=" + portable + "}";
     }
+    @Override
+    public int hashCode() {
+        return 38;
+    }
 }

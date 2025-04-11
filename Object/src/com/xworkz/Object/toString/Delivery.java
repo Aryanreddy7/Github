@@ -15,4 +15,8 @@ public class Delivery {
     public String toString() {
         return "Delivery{item='" + item + "', address='" + address + "', delivered=" + delivered + "}";
     }
+    @Override
+    public int hashCode() {
+        return 22;
+    }
 }

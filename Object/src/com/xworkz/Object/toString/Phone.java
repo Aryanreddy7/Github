@@ -15,4 +15,8 @@ public class Phone {
     public String toString() {
         return "Phone{brand='" + brand + "', model='" + model + "', price=" + price + "}";
     }
+    @Override
+    public int hashCode() {
+        return 57;
+    }
 }

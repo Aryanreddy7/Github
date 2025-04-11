@@ -15,6 +15,10 @@ public class Television {
     public String toString() {
         return "Television{brand='" + brand + "', screenSize=" + screenSize + ", isSmart=" + isSmart + "}";
     }
+    @Override
+    public int hashCode() {
+        return 73;
+    }
 }
 
 

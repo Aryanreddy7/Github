@@ -15,4 +15,8 @@ public class Juicer {
     public String toString() {
         return "Juicer{brand='" + brand + "', citrusOnly=" + citrusOnly + ", motorPower=" + motorPower + "}";
     }
+    @Override
+    public int hashCode() {
+        return 42;
+    }
 }

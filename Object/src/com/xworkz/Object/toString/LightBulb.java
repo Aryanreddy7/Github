@@ -15,4 +15,8 @@ public class LightBulb {
     public String toString() {
         return "LightBulb{type='" + type + "', wattage=" + wattage + ", color='" + color + "'}";
     }
+    @Override
+    public int hashCode() {
+        return 45;
+    }
 }

@@ -15,4 +15,8 @@ public class Book {
     public String toString() {
         return "Book{title='" + title + "', author='" + author + "', pages=" + pages + "}";
     }
+    @Override
+    public int hashCode() {
+        return 9;
+    }
 }

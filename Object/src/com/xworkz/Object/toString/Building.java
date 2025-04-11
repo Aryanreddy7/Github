@@ -15,4 +15,8 @@ public class Building {
     public String toString() {
         return "Building{type='" + type + "', floors=" + floors + ", location='" + location + "'}";
     }
+    @Override
+    public int hashCode() {
+        return 10;
+    }
 }

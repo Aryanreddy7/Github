@@ -15,4 +15,8 @@ public class Currency {
     public String toString() {
         return "Currency{name='" + name + "', symbol='" + symbol + "', exchangeRate=" + exchangeRate + "}";
     }
+    @Override
+    public int hashCode() {
+        return 21;
+    }
 }

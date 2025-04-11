@@ -15,4 +15,8 @@ public class ChefKnife {
     public String toString() {
         return "ChefKnife{brand='" + brand + "', length=" + length + ", handleMaterial='" + handleMaterial + "'}";
     }
+    @Override
+    public int hashCode() {
+        return 15;
+    }
 }

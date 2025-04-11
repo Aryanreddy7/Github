@@ -15,4 +15,8 @@ public class Wardrobe {
     public String toString() {
         return "Wardrobe{doors=" + doors + ", color='" + color + "', sliding=" + sliding + "}";
     }
+    @Override
+    public int hashCode() {
+        return 96;
+    }
 }

@@ -15,4 +15,8 @@ public class Desk {
     public String toString() {
         return "Desk{material='" + material + "', color='" + color + "', drawers=" + drawers + "}";
     }
+    @Override
+    public int hashCode() {
+        return 23;
+    }
 }

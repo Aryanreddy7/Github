@@ -15,4 +15,8 @@ public class Train {
     public String toString() {
         return "Train{name='" + name + "', coaches=" + coaches + ", route='" + route + "'}";
     }
+    @Override
+    public int hashCode() {
+        return 77;
+    }
 }

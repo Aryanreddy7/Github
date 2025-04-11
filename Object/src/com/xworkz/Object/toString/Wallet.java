@@ -15,4 +15,8 @@ public class Wallet {
     public String toString() {
         return "Wallet{material='" + material + "', cardSlots=" + cardSlots + ", color='" + color + "'}";
     }
+    @Override
+    public int hashCode() {
+        return 83;
+    }
 }

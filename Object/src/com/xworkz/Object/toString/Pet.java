@@ -15,4 +15,8 @@ public class Pet {
     public String toString() {
         return "Pet{name='" + name + "', species='" + species + "', age=" + age + "}";
     }
+    @Override
+    public int hashCode() {
+        return 56;
+    }
 }

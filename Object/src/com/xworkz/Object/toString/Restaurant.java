@@ -15,4 +15,8 @@ public class Restaurant {
     public String toString() {
         return "Restaurant{name='" + name + "', cuisineType='" + cuisineType + "', rating=" + rating + "}";
     }
+    @Override
+    public int hashCode() {
+        return 63;
+    }
 }

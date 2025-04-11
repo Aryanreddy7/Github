@@ -15,4 +15,8 @@ public class PodcastEpisode {
     public String toString() {
         return "PodcastEpisode{title='" + title + "', guest='" + guest + "', duration=" + duration + "}";
     }
+    @Override
+    public int hashCode() {
+        return 60;
+    }
 }

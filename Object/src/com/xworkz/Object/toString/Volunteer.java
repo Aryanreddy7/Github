@@ -15,4 +15,8 @@ public class Volunteer {
     public String toString() {
         return "Volunteer{name='" + name + "', organization='" + organization + "', hoursServed=" + hoursServed + "}";
     }
+    @Override
+    public int hashCode() {
+        return 82;
+    }
 }

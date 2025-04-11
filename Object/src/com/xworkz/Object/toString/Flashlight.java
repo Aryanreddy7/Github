@@ -15,4 +15,8 @@ public class Flashlight {
     public String toString() {
         return "Flashlight{brand='" + brand + "', lumens=" + lumens + ", rechargeable=" + rechargeable + "}";
     }
+    @Override
+    public int hashCode() {
+        return 30;
+    }
 }

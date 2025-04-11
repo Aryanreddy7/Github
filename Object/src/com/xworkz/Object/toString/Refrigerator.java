@@ -15,4 +15,8 @@ public class Refrigerator {
         public String toString() {
             return "Refrigerator{brand='" + brand + "', capacity=" + capacity + ", doubleDoor=" + doubleDoor + "}";
         }
+    @Override
+    public int hashCode() {
+        return 62;
+    }
     }

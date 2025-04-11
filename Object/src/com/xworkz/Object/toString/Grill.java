@@ -15,4 +15,8 @@ public class Grill {
     public String toString() {
         return "Grill{type='" + type + "', burners=" + burners + ", gas=" + gas + "}";
     }
+    @Override
+    public int hashCode() {
+        return 35;
+    }
 }

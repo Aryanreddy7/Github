@@ -14,5 +14,9 @@ public class Clock {
     public String toString() {
         return "Clock{brand='" + brand + "', digital=" + digital + ", color='" + color + "'}";
     }
+    @Override
+    public int hashCode() {
+        return 17;
+    }
 }
 

@@ -10,7 +10,10 @@ public class Airport {
         this.code = code;
         this.city = city;
     }
-
+    @Override
+    public int hashCode() {
+        return 02;
+    }
     @Override
     public String toString() {
         return "Airport{name='" + name + "', code='" + code + "', city='" + city + "'}";

@@ -15,4 +15,8 @@ public class YogaMat {
     public String toString() {
         return "YogaMat{brand='" + brand + "', thickness=" + thickness + ", color='" + color + "'}";
     }
+    @Override
+    public int hashCode() {
+        return 100;
+    }
 }

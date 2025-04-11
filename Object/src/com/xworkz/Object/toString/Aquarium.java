@@ -15,4 +15,8 @@ public class Aquarium {
     public String toString() {
         return "Aquarium{name='" + name + "', capacity=" + capacity + ", waterType='" + waterType + "'}";
     }
+    @Override
+    public int hashCode() {
+        return 04;
+    }
 }

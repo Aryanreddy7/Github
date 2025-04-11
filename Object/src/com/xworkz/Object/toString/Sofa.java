@@ -15,4 +15,8 @@ public class Sofa {
     public String toString() {
         return "Sofa{color='" + color + "', seats=" + seats + ", recliner=" + recliner + "}";
     }
+    @Override
+    public int hashCode() {
+        return 66;
+    }
 }

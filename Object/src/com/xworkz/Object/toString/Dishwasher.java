@@ -15,4 +15,8 @@ public class Dishwasher {
     public String toString() {
         return "Dishwasher{brand='" + brand + "', placeSettings=" + placeSettings + ", energyEfficient=" + energyEfficient + "}";
     }
+    @Override
+    public int hashCode() {
+        return 24;
+    }
 }

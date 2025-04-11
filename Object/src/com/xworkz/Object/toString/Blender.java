@@ -15,4 +15,8 @@ public class Blender {
     public String toString() {
         return "Blender{brand='" + brand + "', speedSettings=" + speedSettings + ", cordless=" + cordless + "}";
     }
+    @Override
+    public int hashCode() {
+        return 8;
+    }
 }

@@ -15,4 +15,8 @@ public class Bed {
     public String toString() {
         return "Bed{size='" + size + "', frameMaterial='" + frameMaterial + "', storage=" + storage + "}";
     }
+    @Override
+    public int hashCode() {
+        return 06;
+    }
 }

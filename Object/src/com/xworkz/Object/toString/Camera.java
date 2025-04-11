@@ -15,5 +15,9 @@ package com.xworkz.Object.toString;
         public String toString() {
             return "Camera{brand='" + brand + "', resolution=" + resolution + ", price=" + price + "}";
         }
+        @Override
+        public int hashCode() {
+            return 11;
+        }
     }
 

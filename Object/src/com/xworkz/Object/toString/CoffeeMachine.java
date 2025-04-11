@@ -15,4 +15,8 @@ public class CoffeeMachine {
     public String toString() {
         return "CoffeeMachine{brand='" + brand + "', automatic=" + automatic + ", cupsCapacity=" + cupsCapacity + "}";
     }
+    @Override
+    public int hashCode() {
+        return 19;
+    }
 }

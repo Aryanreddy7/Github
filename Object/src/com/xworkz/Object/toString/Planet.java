@@ -15,4 +15,8 @@ public class Planet {
     public String toString() {
         return "Planet{name='" + name + "', mass=" + mass + ", radius=" + radius + "}";
     }
+    @Override
+    public int hashCode() {
+        return 58;
+    }
 }

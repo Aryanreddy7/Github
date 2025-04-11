@@ -15,4 +15,8 @@ public class Mirror {
     public String toString() {
         return "Mirror{shape='" + shape + "', frameMaterial='" + frameMaterial + "', wallMounted=" + wallMounted + "}";
     }
+    @Override
+    public int hashCode() {
+        return 47;
+    }
 }

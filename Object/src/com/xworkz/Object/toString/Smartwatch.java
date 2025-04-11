@@ -15,4 +15,8 @@ public class Smartwatch {
         public String toString() {
             return "Smartwatch{brand='" + brand + "', gps=" + gps + ", batteryLife=" + batteryLife + "}";
         }
+    @Override
+    public int hashCode() {
+        return 65;
+    }
     }

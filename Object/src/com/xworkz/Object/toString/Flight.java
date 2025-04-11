@@ -15,4 +15,8 @@ public class Flight {
     public String toString() {
         return "Flight{airline='" + airline + "', flightNumber='" + flightNumber + "', destination='" + destination + "'}";
     }
+    @Override
+    public int hashCode() {
+        return 31;
+    }
 }

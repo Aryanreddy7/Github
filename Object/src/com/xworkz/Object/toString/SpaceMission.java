@@ -15,4 +15,8 @@ public class SpaceMission {
     public String toString() {
         return "SpaceMission{missionName='" + missionName + "', agency='" + agency + "', durationDays=" + durationDays + "}";
     }
+    @Override
+    public int hashCode() {
+        return 67;
+    }
 }

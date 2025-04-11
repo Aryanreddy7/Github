@@ -12,6 +12,10 @@ public class AirConditioner {
         }
 
         @Override
+        public int hashCode(){
+            return 01;
+        }
+        @Override
         public String toString() {
             return "AirConditioner{brand='" + brand + "', tonnage=" + tonnage + ", type='" + type + "'}";
         }

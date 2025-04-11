@@ -15,6 +15,10 @@ public class PainterTool {
     public String toString() {
         return "PainterTool{name='" + name + "', material='" + material + "', weight=" + weight + "}";
     }
+    @Override
+    public int hashCode() {
+        return 55;
+    }
 }
 
 

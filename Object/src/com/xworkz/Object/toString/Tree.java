@@ -15,4 +15,8 @@ public class Tree {
     public String toString() {
         return "Tree{species='" + species + "', height=" + height + ", age=" + age + "}";
     }
+    @Override
+    public int hashCode() {
+        return 78;
+    }
 }

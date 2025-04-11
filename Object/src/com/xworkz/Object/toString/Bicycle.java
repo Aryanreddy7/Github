@@ -15,4 +15,8 @@ public class Bicycle {
         public String toString() {
             return "Bicycle{type='" + type + "', color='" + color + "', weight=" + weight + "}";
         }
+    @Override
+    public int hashCode() {
+        return 07;
+    }
     }

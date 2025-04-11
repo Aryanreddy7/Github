@@ -15,4 +15,8 @@ public class Laptop {
     public String toString() {
         return "Laptop{brand='" + brand + "', processor='" + processor + "', ram=" + ram + "}";
     }
+    @Override
+    public int hashCode() {
+        return 44;
+    }
 }

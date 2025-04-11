@@ -15,4 +15,8 @@ public class Chair {
     public String toString() {
         return "Chair{type='" + type + "', material='" + material + "', wheels=" + wheels + "}";
     }
+    @Override
+    public int hashCode() {
+        return 13;
+    }
 }

@@ -15,4 +15,8 @@ public class WeatherReport {
     public String toString() {
         return "WeatherReport{date='" + date + "', temperature=" + temperature + ", condition='" + condition + "'}";
     }
+    @Override
+    public int hashCode() {
+        return 99;
+    }
 }

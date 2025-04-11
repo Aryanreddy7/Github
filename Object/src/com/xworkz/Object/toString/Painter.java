@@ -15,4 +15,8 @@ public class Painter {
     public String toString() {
         return "Painter{name='" + name + "', style='" + style + "', paintingsCount=" + paintingsCount + "}";
     }
+    @Override
+    public int hashCode() {
+        return 54;
+    }
 }

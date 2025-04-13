@@ -19,4 +19,21 @@ public class TVShow {
     public int hashCode() {
         return 80;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof TVShow) {
+                System.out.println("Comparing!!!!!!");
+                TVShow tvShow = this;
+                TVShow tvShow1 = (TVShow) obj;
+                if (tvShow.title.equals(tvShow1.title) && tvShow.genre.equals(tvShow1.genre) && tvShow.seasons == tvShow1.seasons) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

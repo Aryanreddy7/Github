@@ -19,4 +19,21 @@ public class Wallet {
     public int hashCode() {
         return 83;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Wallet) {
+                System.out.println("Comparing!!!!!!");
+                Wallet wallet = this;
+                Wallet wallet1 = (Wallet) obj;
+                if (wallet.material.equals(wallet1.material) && wallet.color.equals(wallet1.color) && wallet.cardSlots == wallet1.cardSlots) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

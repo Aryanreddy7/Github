@@ -19,5 +19,21 @@ public class Clothing {
     public int hashCode() {
         return 18;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Clothing) {
+                System.out.println("Comparing!!!!!!");
+                Clothing clothing = this;
+                Clothing clothing1 = (Clothing) obj;
+                if(clothing.type.equals(clothing1.type)) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
 

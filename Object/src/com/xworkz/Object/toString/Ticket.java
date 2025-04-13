@@ -19,4 +19,21 @@ public class Ticket {
     public int hashCode() {
         return 75;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Ticket) {
+                System.out.println("Comparing!!!!!!");
+                Ticket ticket = this;
+                Ticket ticket1 = (Ticket) obj;
+                if (ticket.event.equals(ticket1.event) && ticket.price == ticket1.price && ticket.price == ticket1.price) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

@@ -19,4 +19,20 @@ public class Bicycle {
     public int hashCode() {
         return 07;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Bicycle) {
+                System.out.println("Comparing!!!!!!");
+                Bicycle bicycle = this;
+                Bicycle bicycle1 = (Bicycle) obj;
+                if(bicycle.type.equals(bicycle1.type)) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
     }

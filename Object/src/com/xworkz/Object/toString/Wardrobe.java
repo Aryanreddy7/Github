@@ -19,4 +19,21 @@ public class Wardrobe {
     public int hashCode() {
         return 96;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Wardrobe) {
+                System.out.println("Comparing!!!!!!");
+                Wardrobe wardrobe = this;
+                Wardrobe wardrobe1 = (Wardrobe) obj;
+                if (wardrobe.color.equals(wardrobe1.color) && wardrobe.sliding == wardrobe1.sliding && wardrobe.doors == wardrobe1.doors ) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

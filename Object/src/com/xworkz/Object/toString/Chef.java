@@ -19,5 +19,21 @@ public class Chef {
     public int hashCode() {
         return 14;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Chef) {
+                System.out.println("Comparing!!!!!!");
+                Chef chef = this;
+                Chef chef1 = (Chef) obj;
+                if(chef.name.equals(chef1.name)) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
 

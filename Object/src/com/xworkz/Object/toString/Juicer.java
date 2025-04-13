@@ -19,4 +19,21 @@ public class Juicer {
     public int hashCode() {
         return 42;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Juicer) {
+                System.out.println("Comparing!!!!!!");
+                Juicer juicer = this;
+                Juicer juicer1 = (Juicer) obj;
+                if (juicer.brand.equals(juicer1.brand) && juicer.motorPower == juicer1.motorPower) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

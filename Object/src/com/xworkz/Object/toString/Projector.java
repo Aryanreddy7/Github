@@ -20,4 +20,21 @@ public class Projector {
     public int hashCode() {
         return 96;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Projector) {
+                System.out.println("Comparing!!!!!!");
+                Projector projector = this;
+                Projector projector1 = (Projector) obj;
+                if (projector.color.equals(projector1.color) && projector.controlType.equals(projector1.controlType) && projector.dimmable==projector1.dimmable) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

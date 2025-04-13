@@ -19,4 +19,21 @@ public class Heater {
     public int hashCode() {
         return 38;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Heater) {
+                System.out.println("Comparing!!!!!!");
+                Heater heater = this;
+                Heater heater1 = (Heater) obj;
+                if (heater.type.equals(heater1.type) && heater.power == heater1.power) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

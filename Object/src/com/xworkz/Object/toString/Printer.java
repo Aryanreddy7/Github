@@ -19,4 +19,21 @@ public class Printer {
     public int hashCode() {
         return 61;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Printer) {
+                System.out.println("Comparing!!!!!!");
+                Printer printer = this;
+                Printer printer1 = (Printer) obj;
+                if (printer.brand.equals(printer1.brand) && printer.wireless==printer1.wireless && printer.type.equals(printer1.type)) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
+
+}

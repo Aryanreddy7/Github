@@ -19,4 +19,22 @@ public class Drone {
     public int hashCode() {
         return 26;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Drone) {
+                System.out.println("Comparing!!!!!!");
+                Drone drone = this;
+                Drone drone1 = (Drone) obj;
+                if(drone.model.equals(drone1.model)) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+
 }

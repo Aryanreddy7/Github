@@ -19,4 +19,21 @@ public class Phone {
     public int hashCode() {
         return 57;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Phone) {
+                System.out.println("Comparing!!!!!!");
+                Phone phone = this;
+                Phone phone1 = (Phone) obj;
+                if (phone.brand.equals(phone1.brand) && phone.model.equals(phone1.model)) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

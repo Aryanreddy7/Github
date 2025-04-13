@@ -19,4 +19,20 @@ public class Bed {
     public int hashCode() {
         return 06;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Bed) {
+                System.out.println("Comparing!!!!!!");
+                Bed bed = this;
+                Bed bed1 = (Bed) obj;
+                if(bed.size.equals(bed1.size)) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

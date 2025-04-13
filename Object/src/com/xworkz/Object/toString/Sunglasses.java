@@ -19,4 +19,21 @@ public class Sunglasses {
     public int hashCode() {
         return 70;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Sunglasses) {
+                System.out.println("Comparing!!!!!!");
+                Sunglasses sunglasses = this;
+                Sunglasses sunglasses1 = (Sunglasses) obj;
+                if (sunglasses.brand.equals(sunglasses1.brand) && sunglasses.lensColor.equals(sunglasses1.lensColor) && sunglasses.polarized == sunglasses1.polarized) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

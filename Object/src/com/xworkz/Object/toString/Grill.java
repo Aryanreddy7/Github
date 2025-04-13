@@ -19,4 +19,21 @@ public class Grill {
     public int hashCode() {
         return 35;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Grill) {
+                System.out.println("Comparing!!!!!!");
+                Grill grill = this;
+                Grill grill1 = (Grill) obj;
+                if (grill.type.equals(grill1.type) && grill.burners == grill1.burners) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

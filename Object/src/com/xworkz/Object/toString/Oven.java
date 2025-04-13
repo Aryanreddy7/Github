@@ -19,4 +19,21 @@ public class Oven {
     public int hashCode() {
         return 53;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Oven) {
+                System.out.println("Comparing!!!!!!");
+                Oven oven = this;
+                Oven oven1 = (Oven) obj;
+                if (oven.brand.equals(oven1.brand) && oven.capacity == oven1.capacity) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

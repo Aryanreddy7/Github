@@ -19,4 +19,21 @@ public class Hospital {
     public int hashCode() {
         return 39;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Hospital) {
+                System.out.println("Comparing!!!!!!");
+                Hospital hospital = this;
+                Hospital hospital1 = (Hospital) obj;
+                if (hospital.name.equals(hospital1.name) && hospital.beds == hospital1.beds) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

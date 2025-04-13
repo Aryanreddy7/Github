@@ -19,4 +19,21 @@ public class Movie {
     public int hashCode() {
         return 50;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Movie) {
+                System.out.println("Comparing!!!!!!");
+                Movie movie = this;
+                Movie movie1 = (Movie) obj;
+                if (movie.title.equals(movie1.title) && movie.duration == movie1.duration) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

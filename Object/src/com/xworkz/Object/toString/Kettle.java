@@ -19,4 +19,21 @@ public class Kettle {
     public int hashCode() {
         return 43;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Kettle) {
+                System.out.println("Comparing!!!!!!");
+                Kettle kettle = this;
+                Kettle kettle1 = (Kettle) obj;
+                if (kettle.brand.equals(kettle1.brand) && kettle.capacity == kettle1.capacity) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

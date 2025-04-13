@@ -19,4 +19,20 @@ public class Delivery {
     public int hashCode() {
         return 22;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Delivery) {
+                System.out.println("Comparing!!!!!!");
+                Delivery delivery = this;
+                Delivery delivery1 = (Delivery) obj;
+                if(delivery.address.equals(delivery1.address)) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

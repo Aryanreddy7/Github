@@ -19,4 +19,21 @@ public class LightBulb {
     public int hashCode() {
         return 45;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof LightBulb) {
+                System.out.println("Comparing!!!!!!");
+                LightBulb lightBulb = this;
+                LightBulb lightBulb1 = (LightBulb) obj;
+                if (lightBulb.type.equals(lightBulb1.type) && lightBulb.wattage == lightBulb1.wattage) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

@@ -19,4 +19,21 @@ public class WeatherReport {
     public int hashCode() {
         return 99;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof WeatherReport) {
+                System.out.println("Comparing!!!!!!");
+                WeatherReport weatherReport = this;
+                WeatherReport weatherReport1 = (WeatherReport) obj;
+                if (weatherReport.date.equals(weatherReport1.date) && weatherReport.temperature == weatherReport1.temperature && weatherReport.condition.equals(weatherReport1.condition)) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

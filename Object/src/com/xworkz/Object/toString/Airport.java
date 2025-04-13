@@ -18,4 +18,23 @@ public class Airport {
     public String toString() {
         return "Airport{name='" + name + "', code='" + code + "', city='" + city + "'}";
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null)
+        {
+            System.out.println("ref is not null");
+            if(obj instanceof Airport)
+            {
+                System.out.println("Comparing!!!!!!");
+                Airport airport=this;
+                Airport airport1=(Airport)obj;
+                if(airport.name.equals(airport1.name))
+                {
+                    System.out.println("both  are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

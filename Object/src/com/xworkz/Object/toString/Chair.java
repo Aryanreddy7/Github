@@ -19,4 +19,21 @@ public class Chair {
     public int hashCode() {
         return 13;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if(obj != null) {
+            System.out.println("ref is not null");
+            if(obj instanceof Chair) {
+                System.out.println("Comparing!!!!!!");
+                Chair chair = this;
+                Chair chair1 = (Chair) obj;
+                if(chair.material.equals(chair1.material)) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

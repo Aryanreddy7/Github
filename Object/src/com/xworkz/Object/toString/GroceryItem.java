@@ -19,4 +19,21 @@ public class GroceryItem {
     public int hashCode() {
         return 36;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof GroceryItem) {
+                System.out.println("Comparing!!!!!!");
+                GroceryItem item = this;
+                GroceryItem item1 = (GroceryItem) obj;
+                if (item.name.equals(item1.name) && item.price == item1.price) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

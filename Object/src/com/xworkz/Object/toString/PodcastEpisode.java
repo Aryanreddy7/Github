@@ -19,4 +19,21 @@ public class PodcastEpisode {
     public int hashCode() {
         return 60;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof PodcastEpisode) {
+                System.out.println("Comparing!!!!!!");
+                PodcastEpisode podcastEpisode = this;
+                PodcastEpisode podcastEpisode1 = (PodcastEpisode) obj;
+                if (podcastEpisode.title.equals(podcastEpisode1.title) && podcastEpisode.duration == podcastEpisode1.duration) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }

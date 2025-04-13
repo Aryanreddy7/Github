@@ -19,4 +19,21 @@ public class Planet {
     public int hashCode() {
         return 58;
     }
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Planet) {
+                System.out.println("Comparing!!!!!!");
+                Planet planet = this;
+                Planet planet1 = (Planet) obj;
+                if (planet.name.equals(planet1.name) && planet.mass == planet1.mass) {
+                    System.out.println("both are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }
